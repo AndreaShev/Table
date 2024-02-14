@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>табличная верстка</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    td {
+      padding: 10px;
+      border: 1px solid black;
+    }
+    .header {
+      background-color: white;
+      color: blue;
+    }
+    .footer {
+      background-color: black;
+      color: white;
+    }
+    .footer-address {
+      float: left;
+    }
+    .footer-contact {
+      float: right;
+      text-align: right;
+    }
+    .social-icons {
+      display: inline-block;
+      margin-left: 10px;
+    }
+    .disclaimer {
+      width: 100%;
+      text-align: center;
+      background-color: black;
+      color: white;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <tr class="header">
+      <td>
+        <img src="logo.png" alt="Логотип">
+      </td>
+      <td>
+        <div>Телефон: +7 123-456-789</div>
+        <div>Адрес сайта: www.example.com</div>
+      </td>
+    </tr>
+    <tr class="footer">
+      <td colspan="2">
+        <div class="footer-address">
+          <div>Адрес:</div>
+          <div>Город, Улица, Дом</div>
+          <div>Почтовый индекс</div>
+        </div>
+        <div class="footer-contact">
+          <div>
+            Телефон: +7 123-456-789<br>
+            Адрес сайта: www.example.com
+          </div>
+          <div class="social-icons">
+            <a href="https://t.me/yourtelegram">
+              <img src="telegram.png" alt="Telegram" width="20" height="20">
+            </a>
+            <a href="https://www.youtube.com/yourchannel">
+              <img src="youtube.png" alt="YouTube" width="20" height="20">
+            </a>
+            <a href="https://vk.com/yourvk">
+              <img src="vk.png" alt="VK" width="20" height="20">
+            </a>
+          </div>
+        </div>
+      </td>
+    </tr>
+  </table>
+  
+  <div class="disclaimer">
+    Не отвечайте на данное письмо. Оно является автоматической рассылкой. Вы получили это письмо, так как подписались на новости компании Промэнерго Автоматика.
+  </div>
+</body>
+</html>
